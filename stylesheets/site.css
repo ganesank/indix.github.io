@@ -2,20 +2,33 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 /* line 3, site.css.scss */
 * {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
   border-radius: 0 !important; }
 
-/* line 9, site.css.scss */
+/* line 7, site.css.scss */
 body {
   font-family: 'Muli', sans-serif; }
 
-/* line 12, site.css.scss */
+/* line 10, site.css.scss */
 .content {
   background-color: #ffffff;
   margin-bottom: 300px; }
 
-/* line 17, site.css.scss */
+/* line 15, site.css.scss */
+.opl {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  z-index: 99999; }
+
+/* line 21, site.css.scss */
+.opl a {
+  width: 73px;
+  height: 56px;
+  text-indent: -9999px;
+  display: block;
+  background: url("https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png") no-repeat; }
+
+/* line 29, site.css.scss */
 .navbar {
   margin-bottom: 0;
   position: fixed;
@@ -26,22 +39,30 @@ body {
   background: none;
   border: none;
   box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100px;
   z-index: 1000;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-  /* line 32, site.css.scss */
+  /* line 51, site.css.scss */
   .navbar.shrink {
     height: 40px;
     background: #FF512F;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF512F, #DD2476);
     /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #FF512F, #DD2476);
     background: linear-gradient(to right, #FF512F, #DD2476); }
 
-/* line 40, site.css.scss */
+/* line 60, site.css.scss */
 #jumbotron {
   color: #ffffff;
   height: 540px;
@@ -52,9 +73,10 @@ body {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FF512F, #DD2476);
   /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(left, #FF512F, #DD2476);
   background: linear-gradient(to right, #FF512F, #DD2476);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  /* line 49, site.css.scss */
+  /* line 70, site.css.scss */
   #jumbotron .bg {
     position: absolute;
     width: 100%;
@@ -64,18 +86,19 @@ body {
     background-image: url(/images/bg.png);
     background-size: contain;
     background-position: center center;
+    -webkit-animation: move 500s linear infinite;
     animation: move 500s linear infinite; }
 
-/* line 62, site.css.scss */
+/* line 84, site.css.scss */
 h1 {
   font-family: 'Questrial', sans-serif;
   font-weight: 100; }
 
-/* line 67, site.css.scss */
+/* line 89, site.css.scss */
 .ix-menu {
   margin-top: 5px; }
 
-/* line 71, site.css.scss */
+/* line 93, site.css.scss */
 a.fancy {
   color: #FFFFFF;
   text-decoration: none;
@@ -85,53 +108,54 @@ a.fancy {
   letter-spacing: 0.5px;
   padding: 14px 5px;
   border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   text-align: center; }
-  /* line 82, site.css.scss */
+  /* line 105, site.css.scss */
   a.fancy:hover {
     border-bottom: 1px solid #fff; }
 
-/* line 88, site.css.scss */
+/* line 111, site.css.scss */
 .panel {
   color: #000;
   box-shadow: none;
   margin-bottom: 35px; }
-  /* line 92, site.css.scss */
+  /* line 115, site.css.scss */
   .panel .panel-heading {
     background: none;
     padding: 20px;
     white-space: nowrap; }
-    /* line 96, site.css.scss */
+    /* line 119, site.css.scss */
     .panel .panel-heading h3 {
       overflow: hidden;
       text-overflow: ellipsis;
       font-size: 30px;
       font-weight: 100; }
-  /* line 103, site.css.scss */
+  /* line 126, site.css.scss */
   .panel .panel-body {
     height: 150px; }
-  /* line 106, site.css.scss */
+  /* line 129, site.css.scss */
   .panel .wrap {
     margin-right: 20px; }
-  /* line 109, site.css.scss */
+  /* line 132, site.css.scss */
   .panel .panel-footer {
     background: none;
     padding: 15px 20px; }
 
-/* line 114, site.css.scss */
+/* line 137, site.css.scss */
 .section-title {
   text-align: center;
   font-size: 30px;
   margin: 20px 0 60px;
   background-color: #ffffff;
   position: relative; }
-  /* line 121, site.css.scss */
+  /* line 144, site.css.scss */
   .section-title .title span {
     background-color: #ffffff;
     position: relative;
     padding: 0 20px;
     z-index: 1; }
-  /* line 127, site.css.scss */
+  /* line 150, site.css.scss */
   .section-title .title:after {
     content: ' ';
     position: absolute;
@@ -141,16 +165,17 @@ a.fancy {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF512F, #DD2476);
     /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #FF512F, #DD2476);
     background: linear-gradient(to right, #FF512F, #DD2476);
     height: 1px;
     width: 50%;
     left: 25%; }
 
-/* line 142, site.css.scss */
+/* line 166, site.css.scss */
 #contributors {
   padding-bottom: 30px; }
 
-/* line 145, site.css.scss */
+/* line 169, site.css.scss */
 .contributor-image {
   border-radius: 50% !important;
   width: 130px;
@@ -158,6 +183,13 @@ a.fancy {
   display: inherit;
   margin-bottom: 30px; }
 
+@-webkit-keyframes move {
+  0% {
+    background-position: center center; }
+  50% {
+    background-position: 3000px center; }
+  100% {
+    background-position: center center; } }
 @keyframes move {
   0% {
     background-position: center center; }
@@ -165,7 +197,7 @@ a.fancy {
     background-position: 3000px center; }
   100% {
     background-position: center center; } }
-/* line 164, site.css.scss */
+/* line 200, site.css.scss */
 .footer {
   background: none;
   background-color: #F9F9F9;
@@ -174,32 +206,45 @@ a.fancy {
   left: 0;
   z-index: -1;
   height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%; }
-  /* line 177, site.css.scss */
+  /* line 226, site.css.scss */
   .footer p {
     float: none;
     font-size: 20px;
     margin-bottom: 80px; }
-    /* line 181, site.css.scss */
+    /* line 230, site.css.scss */
     .footer p .fa-heart {
       color: #EA355B; }
 
 @media screen and (max-width: 768px) {
-  /* line 189, site.css.scss */
+  /* line 238, site.css.scss */
   .navbar .container {
     text-align: center;
     width: 100%; }
-  /* line 193, site.css.scss */
+  /* line 242, site.css.scss */
   .navbar.shrink {
     height: 100px; }
-  /* line 196, site.css.scss */
+  /* line 245, site.css.scss */
   .navbar img {
     margin-bottom: 10px; }
 
-  /* line 200, site.css.scss */
+  /* line 249, site.css.scss */
   a.fancy {
     margin: 0 30px; } }
