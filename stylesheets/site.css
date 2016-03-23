@@ -177,37 +177,39 @@ a.fancy {
 
 /* line 170, site.css.scss */
 .contributor {
-  position: relative;
-  display: inline-block;
-  overflow: hidden; }
-  /* line 176, site.css.scss */
-  .contributor p {
-    display: inline; }
+  padding: 15px; }
+  /* line 173, site.css.scss */
+  .contributor .wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; }
     /* line 178, site.css.scss */
-    .contributor p span {
-      color: #ffffff;
-      font-weight: 200;
-      position: absolute;
-      display: inline-block;
-      right: -25px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
-      text-align: center;
-      text-transform: uppercase;
-      top: 6px;
-      background: #f13e4e;
-      width: 100px;
-      padding: 3px 10px;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg); }
-  /* line 198, site.css.scss */
-  .contributor .contributor-image {
-    width: 195px;
-    margin: 0 auto;
-    display: inherit;
-    margin-bottom: 30px; }
+    .contributor .wrapper p {
+      display: inline; }
+      /* line 180, site.css.scss */
+      .contributor .wrapper p span {
+        color: #ffffff;
+        font-weight: 200;
+        position: absolute;
+        display: inline-block;
+        right: -25px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
+        text-align: center;
+        text-transform: uppercase;
+        top: 6px;
+        background: #f13e4e;
+        width: 100px;
+        padding: 3px 10px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    /* line 200, site.css.scss */
+    .contributor .wrapper .contributor-image {
+      width: 100%;
+      margin: 0 auto;
+      display: inherit; }
 
 @-webkit-keyframes move {
   0% {
@@ -223,7 +225,7 @@ a.fancy {
     background-position: 3000px center; }
   100% {
     background-position: center center; } }
-/* line 229, site.css.scss */
+/* line 231, site.css.scss */
 .footer {
   background: none;
   background-color: #F9F9F9;
@@ -250,27 +252,27 @@ a.fancy {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%; }
-  /* line 255, site.css.scss */
+  /* line 257, site.css.scss */
   .footer p {
     float: none;
     font-size: 20px;
     margin-bottom: 80px; }
-    /* line 259, site.css.scss */
+    /* line 261, site.css.scss */
     .footer p .fa-heart {
       color: #EA355B; }
 
 @media screen and (max-width: 768px) {
-  /* line 267, site.css.scss */
+  /* line 269, site.css.scss */
   .navbar .container {
     text-align: center;
     width: 100%; }
-  /* line 271, site.css.scss */
+  /* line 273, site.css.scss */
   .navbar.shrink {
     height: 100px; }
-  /* line 274, site.css.scss */
+  /* line 276, site.css.scss */
   .navbar img {
     margin-bottom: 10px; }
 
-  /* line 278, site.css.scss */
+  /* line 280, site.css.scss */
   a.fancy {
     margin: 0 30px; } }
